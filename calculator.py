@@ -3,9 +3,8 @@ def add(a, b):
     u = a + b
     return u
 
-def sub(a, b):
-    u = a - b
-    return u
+def subtract(a, b):
+    return a - b
 
 def mul(a, b):
     u = a * b
@@ -17,45 +16,6 @@ def div(a,b):
     u = b / a
     return u
 
-def log (a,b):
-    if a < 0:
-        raise ValueError("Cannot be negative")
-    elif a == 0:
-        raise ValueError("Cannot be zero")
-    if b < 0:
-        raise ValueError("Cannot be negative")
-    elif b == 0:
-        raise ValueError("Cannot be zero")
-    u = math.log(a,b)
-    return u
-
-def exp (a,b):
-    u = a ** b
-    return u
-
-"""
-import math
-
-def square_root(a):
-    if a < 0:
-        raise ValueError("Cannot get square root of negative value")
-
-    return math.sqrt(a)
-
-def hypotenuse(a, b):
-    return math.hypot(a, b)
-
-def add(a, b): 
-    return a + b
-
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
-
-
 def logarithm(a, b):
     if a <= 0:
         raise ValueError("The base cannot be negative")
@@ -66,7 +26,17 @@ def logarithm(a, b):
 
     return math.log(b, a)
 
-def exponent(a, b):
-    return a ** b
+def exp(a,b):
+    u = a ** b
+    return u
+
+def square_root(a):
+    if a < 0:
+        raise ValueError("Cannot get square root of negative value")
+
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 
 
