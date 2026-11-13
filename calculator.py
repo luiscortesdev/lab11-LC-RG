@@ -1,4 +1,3 @@
-
 import math
 def add(a, b):
     u = a + b
@@ -33,4 +32,32 @@ def log (a,b):
 def exp (a,b):
     u = a ** b
     return u
+
+"""
+import math
+
+def add(a, b): 
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+
+
+def logarithm(a, b):
+    if a <= 0:
+        raise ValueError("The base cannot be negative")
+    if a == 1:
+        raise ValueError("The base cannot equal 1")
+    if b <= 0:
+        raise ValueError("The value cannot be negative")
+
+    return math.log(b, a)
+
+def exponent(a, b):
+    return a ** b
+
 
